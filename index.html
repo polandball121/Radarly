@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Radarly</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div id="overlay"></div>
-  <img src="RadarlyLogo.PNG" alt="Radarly Logo" id="logo">
 
+  <!-- Logo -->
+  <img src="/images/RadarlyLogo.PNG" alt="Radarly Logo" id="logo">
+
+  <!-- Login card -->
   <div class="card">
     <div class="welcome">Welcome to Radarly</div>
-    <a href="https://discord.com/oauth2/authorize?client_id=1407901384187183284&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5500%2Fcallback&scope=identify">
+    <a id="action-btn" href="https://discord.com/oauth2/authorize?client_id=1407901384187183284&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5500%2Fcallback&scope=identify">
       Login with Discord
     </a>
   </div>
 
-  <script src="main.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>
