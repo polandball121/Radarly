@@ -1,0 +1,119 @@
+/* General body settings */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Semi-transparent dark overlay behind content */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Logo styling */
+#logo {
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 20px; /* rounded corners */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Semi-transparent card */
+.card {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(242, 242, 242, 0.85);
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Welcome text */
+.welcome {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Buttons inside card */
+a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, opacity 0.2s;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effect for buttons */
+a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Specific button colors */
+.edit-profile {
+  background-color: #9b59b6; /* purple */
+  color: white;
+}
+
+.leaderboard {
+  background-color: #f1c40f; /* yellow */
+  color: #333;
+}
+
+.search-controller {
+  background-color: #2ecc71; /* green */
+  color: white;
+}
+
+/* Optional responsive tweaks */
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+  }
+
+  a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #logo {
+    width: 150px;
+  }
+}
