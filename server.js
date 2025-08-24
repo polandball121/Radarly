@@ -11,7 +11,7 @@ const PORT = 5500;
 
 const CLIENT_ID = '1407901384187183284';
 const CLIENT_SECRET = 'fX-w_gdFfdrJ5cLcO3Z_1_xd8VVC5Zkq';
-const REDIRECT_URI = 'http://localhost:5500/callback';
+const REDIRECT_URI = 'https://radarly.online/callback';
 
 app.use(express.static(path.join(__dirname)));
 
